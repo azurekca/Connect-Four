@@ -23,9 +23,9 @@ document.getElementById('new-game').addEventListener('submit', event => {
 	document.getElementById('play-area').style.opacity = '1';
 });
 
-document.addEventListener('keydown', event => {
+document.addEventListener('keyup', event => {
 	if (game) {
-		game.handleKeydown(event);
+		game.handleKeyup(event);
 	}
 });
 

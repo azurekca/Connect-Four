@@ -37,7 +37,7 @@ class Game {
    * Branches code, depending on what key player presses
    * @param {Object} event - Keydown event object
    */
-  handleKeydown(event) {
+  handleKeyup(event) {
     if (this.ready) {
       if (event.key === "ArrowLeft") {
         // move token a column left
